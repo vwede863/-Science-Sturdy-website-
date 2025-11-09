@@ -1,0 +1,155 @@
+/* ===== GENERAL STYLING ===== */
+body {
+  background-color: #000; /* black background */
+  color: #a0522d; /* dark brown text for science write-ups */
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* ===== HEADER ===== */
+header {
+  background-color: #111;
+  color: gold;
+  text-align: center;
+  padding: 20px;
+  font-size: 1.5em;
+  letter-spacing: 1px;
+  box-shadow: 0 2px 10px rgba(255, 215, 0, 0.3);
+}
+
+/* ===== NAVIGATION BAR ===== */
+nav {
+  text-align: center;
+  background-color: #222;
+  padding: 10px;
+}
+
+nav button {
+  background-color: gold;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+nav button:hover {
+  background-color: #ffcc00;
+  transform: scale(1.05);
+}
+
+/* ===== SECTIONS ===== */
+section {
+  display: none;
+  padding: 20px;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+section.active {
+  display: block;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ===== SCIENCE WRITE-UP AREA ===== */
+h2 {
+  color: gold;
+  border-bottom: 2px solid #ffcc00;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+}
+
+/* ===== CHAT ROOM ===== */
+#chatOutput {
+  background-color: #121212;
+  border: 1px solid #333;
+  border-radius: 10px;
+  padding: 10px;
+  height: 300px;
+  overflow-y: auto;
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+/* Chat messages */
+.chat-message {
+  background-color: #1e1e1e;
+  margin: 8px 0;
+  padding: 8px 12px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.chat-message p {
+  margin: 0;
+  color: #fff;
+}
+
+.msg-time {
+  font-size: 0.75em;
+  color: #aaa;
+  display: block;
+  text-align: right;
+  margin-top: 5px;
+}
+
+/* Bot messages */
+.bot-message {
+  background: #1a1a1a;
+  border-left: 3px solid gold;
+  color: #ffec8b;
+}
+
+/* ===== INPUT AREA ===== */
+input[type="text"], textarea {
+  width: 95%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #555;
+  background-color: #222;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+input[type="text"]:focus, textarea:focus {
+  outline: none;
+  border-color: gold;
+}
+
+/* ===== SEND BUTTON ===== */
+button.send-btn {
+  background-color: hotpink; /* pink for chat button */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button.send-btn:hover {
+  background-color: #ff69b4;
+  transform: scale(1.05);
+}
+
+/* ===== FOOTER ===== */
+footer {
+  background-color: #111;
+  color: #ccc;
+  text-align: center;
+  padding: 15px;
+  margin-top: 20px;
+  font-size: 0.9em;
+  border-top: 1px solid #333;
+}
+button, nav button {
+  box-shadow: 0 0 10px rgba(255, 215, 0, 0.4);
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Science & Chat Hub</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header>
+    <h1>🔬 Science & Chat Hub</h1>
+    <p>Learn • Chat • Explore • Grow 🚀</p>
+  </header>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav>
+    <button onclick="showSection('science')">Science</button>
+    <button onclick="showSection('career')">Career</button>
+    <button onclick="showSection('crypto')">Crypto</button>
+    <button onclick="showSection('chat')">Chat Room</button>
+  </nav>
+
+  <!-- ===== SCIENCE SECTION ===== -->
+  <section id="science" class="active">
+    <h2>🔬 Science Section</h2>
+    <p>
+      Science is the study of the world around us — from tiny atoms to vast galaxies.
+      Explore subjects like <b>Biology</b>, <b>Physics</b>, and <b>Chemistry</b> to prepare for your WAEC or JAMB exams.
+    </p>
+    <ul>
+      <li><b>Biology:</b> Life and living organisms.</li>
+      <li><b>Physics:</b> Matter, motion, and energy.</li>
+      <li><b>Chemistry:</b> Substances and their reactions.</li>
+    </ul>
+  </section>
+
+  <!-- ===== CAREER SECTION ===== -->
+  <section id="career">
+    <h2>💼 Career Section</h2>
+    <p>
+      Your career begins with what you learn today. Focus on building skills in science, technology, and communication.
+      Never stop learning — success follows consistent effort. 🌟
+    </p>
+  </section>
+
+  <!-- ===== CRYPTO SECTION ===== -->
+  <section id="crypto">
+    <h2>💰 Crypto Education</h2>
+    <p>
+      Cryptocurrency is a new type of digital money powered by blockchain technology.  
+      Learn the basics before investing:
+    </p>
+    <ul>
+      <li>Bitcoin (BTC) — the first cryptocurrency.</li>
+      <li>Ethereum (ETH) — smart contract platform.</li>
+      <li>Always study and avoid scams.</li>
+    </ul>
+  </section>
+
+  <!-- ===== CHAT ROOM SECTION ===== -->
+  <section id="chat">
+    <h2>💬 Chat with Your Study Bot</h2>
+
+    <input type="text" id="username" placeholder="Enter your name" />
+    <div id="chatOutput"></div>
+    <textarea id="messageBox" placeholder="Type your message..."></textarea><br>
+    <button class="send-btn" onclick="sendMessage()">Send Message</button>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <p>Created by Vwede Okorosobo | Science & Chat Hub © 2025</p>
+  </footer>
+
+  <!-- ===== SCRIPT ===== -->
+  <script src="script.js"></script>
+</body>
+</html>
